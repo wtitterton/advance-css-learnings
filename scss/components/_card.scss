@@ -37,7 +37,7 @@
                 background-image: linear-gradient(to right bottom, $color-primary-light,  $color-primary-dark);
             }
 
-             &-2
+             &-3
             {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light,  $color-tertiary-dark);
             }
@@ -63,6 +63,8 @@
         background-blend-mode: screen;
         -webkit-clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius:3px;
+        border-top-right-radius:3px;
         &--1
         {
             background-image:linear-gradient(to right bottom, $color-secondary-light,  $color-secondary-dark), url('../img/nat-5.jpg');
@@ -70,12 +72,12 @@
 
         &--2
         {
-            background-image: url('../img/nat-5.jpg');
+            background-image:linear-gradient(to right bottom, $color-primary-light,  $color-primary-dark), url('../img/nat-6.jpg');
         }
 
         &--3
         {
-            background-image: url('../img/nat-5.jpg');
+            background-image:linear-gradient(to right bottom, $color-tertiary-light,  $color-tertiary-dark), url('../img/nat-7.jpg');
         }
     }
 
@@ -99,6 +101,13 @@
         box-decoration-break: clone;
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light,.85),  rgba($color-secondary-dark,.85));
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light,.85),  rgba($color-primary-dark,.85));
+        }
+
+         &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light,.85),  rgba($color-tertiary-dark,.85));
         }
     }
 
@@ -128,4 +137,37 @@
 
       
     }
+
+     //back side styling
+
+}
+
+.card__cta
+{
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card__price-box
+{
+    text-align: center;
+    color:#fff;
+    margin-bottom: 8rem;
+}
+
+.card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.card__price-value
+{
+    font-size: 6rem;
+    font-weight: 100;
+
 }
